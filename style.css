@@ -768,6 +768,7 @@ form > #msg {
   /* height: 220px; */
   padding-left: 2%;
   padding-top: 1%;
+  resize: none;
 }
 #coding_skills {
   padding: 3%;

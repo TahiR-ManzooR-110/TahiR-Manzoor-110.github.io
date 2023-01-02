@@ -352,7 +352,7 @@ h4 {
 
 .about .row .box .progress .bar span {
   height: 100%;
-  border-radius: 0.3rem;
+  border-radius: 0.31rem;
   background-color: var(--main-color);
   display: block;
 }

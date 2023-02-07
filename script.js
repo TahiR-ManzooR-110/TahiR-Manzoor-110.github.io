@@ -70,7 +70,7 @@ function sendEmail() {
     from_email: document.getElementById("sender_email").value,
   };
 
-  emailjs.send("service_x1gjf3g", "template_k0lfjgw", templateParams).then(
+  emailjs.send("service_x1gjf3g", "template_3uwqmkh", templateParams).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
     },

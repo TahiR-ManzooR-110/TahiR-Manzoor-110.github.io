@@ -459,6 +459,20 @@ h4 {
     font-size: 2.5rem;
     color: var(--primary-text-color);
 }
+#project_image_container{
+    gap: 1rem;
+}
+#project_image_container>.project_box{
+    padding: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--primary-bg-color);
+}
+.list{
+    padding-left: 1rem;
+}
+.project_desc>button{
+    background-color: white;
+}
 .contact .row {
     display: flex;
     justify-content: center;
@@ -574,7 +588,7 @@ h4 {
     padding: 10px;
     margin: auto;
     margin-top: 10%;
-    margin-left: 600%;
+    margin-left: 580%;
     border-radius: 5px;
 }
 
@@ -793,6 +807,9 @@ form>#msg {
 
     html {
         font-size: 50%;
+    }
+    .home{
+        padding-top: 8rem;
     }
     .portfolio .image-container .box {
         width: 100%;

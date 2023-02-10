@@ -29,7 +29,7 @@ function changeIcon() {
 }
 //resume
 
-document.getElementById("my_resume").addEventListener("click", function(){
+document.getElementById("download_resume").addEventListener("click", function(){
   window.open("http://drive.google.com/file/d/1hXdiu9oOKpD7zHxQUKeWa0rNMntBpcT8/view?usp=sharing", "_blank");
   this.href = "Tahir_Manzoor/Resume";
   this.download = "Tahir_Manzoor/Resume";

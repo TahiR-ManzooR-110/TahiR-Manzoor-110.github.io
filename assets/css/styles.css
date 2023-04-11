@@ -465,7 +465,7 @@ body.light-theme {
 
 /*=============== SKILLS ===============*/
 #skills{
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 .skills__container {
   row-gap: 2rem;

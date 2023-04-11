@@ -135,48 +135,6 @@ document.getElementById("download_resume").addEventListener("click", function(){
 
 /*=======================Email=======================*/
 
-// let contact_div_name= document.getElementById("contact__form-name");
-// let contact_div_email= document.getElementById("contact__form-email");
-// let contact_div_msg= document.getElementById("contact__form-msg");
-
-// function sendmail() {
-//   let name = contact_div_name.getElementById('form__name');
-//   let email = contact_div_email.getElementById('form__email');
-//   let msg = contact_div_msg.getElementById('form__msg');
-//   let submit = document.getElementById("contact__form-btn");
-//   submit.addEventListener("click", () => {
-//     if (email.value == "" || name.value=="" || msg.value=="" ) {
-//       error();
-//     } else {
-//       sendEmail();
-//       alert("Message sent successfully!")
-//       let form = document.getElementById("contact__form");
-//       form.reset();
-//     }
-//   });
-// }
-// sendmail();
-// function error() {
-//   alert("Please fill all the details");
-// }
-// function sendEmail() {
-//   var templateParams = {
-//     from_name: contact_div_name.getElementById('form__name').value,
-//     to_name: "Tahir Manzoor",
-//     mesg: contact_div_msg.getElementById('form__msg').value,
-//     from_email: contact_div_email.getElementById('form__email').value,
-//   };
-
-//   emailjs.send("service_x1gjf3g", "template_3uwqmkh", templateParams).then(
-//     function (response) {
-//       console.log("SUCCESS!", response.status, response.text);
-//     },
-//     function (error) {
-//       console.log("FAILED...", error);
-//     }
-//   );
-// }
-
 function validateEmail(email) {
   let pattern = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,3}$/;
   return pattern.test(email);

@@ -129,14 +129,10 @@ sr.reveal('.home__social, .home__scroll', {delay: 900, origin:'bottom'})
 
 document.getElementById("download_resume").addEventListener("click", function(){
   window.open("https://drive.google.com/file/d/1QomrPltksgGTBEIkl7JKFg2NL0-qmO_e/view?usp=sharing", "_blank");
-  this.href = ".Tahir_Manzoor/Resume.pdf";
-  this.download = ".Tahir_Manzoor/Resume.pdf";
 });
 
 document.getElementById("nav_resume").addEventListener("click", function(){
   window.open("https://drive.google.com/file/d/1QomrPltksgGTBEIkl7JKFg2NL0-qmO_e/view?usp=sharing", "_blank");
-  this.href = ".Tahir_Manzoor/Resume.pdf";
-  this.download = ".Tahir_Manzoor/Resume.pdf";
 });
 
 /*=======================Email=======================*/

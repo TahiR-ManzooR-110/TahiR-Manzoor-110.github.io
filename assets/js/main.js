@@ -9,25 +9,25 @@ window.addEventListener("scroll", scrollHeader);
 
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll(".skills__modal"),
-modalBtns = document.querySelectorAll(".skills__button"),
-modalClose = document.querySelectorAll(".skills__modal-close");
+  modalBtns = document.querySelectorAll(".skills__button"),
+  modalClose = document.querySelectorAll(".skills__modal-close");
 
 let modal = function (modalClick) {
-modalViews[modalClick].classList.add("active-modal");
+  modalViews[modalClick].classList.add("active-modal");
 };
 
 modalBtns.forEach((mb, i) => {
-mb.addEventListener("click", () => {
-  modal(i);
-});
+  mb.addEventListener("click", () => {
+    modal(i);
+  });
 });
 
 modalClose.forEach((mc) => {
-mc.addEventListener("click", () => {
-  modalViews.forEach((mv) => {
-    mv.classList.remove("active-modal");
+  mc.addEventListener("click", () => {
+    modalViews.forEach((mv) => {
+      mv.classList.remove("active-modal");
+    });
   });
-});
 });
 
 /*=============== FILTER PORTFOLIO ===============*/
@@ -72,22 +72,22 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+const scrollActive = () => {
+  const scrollY = window.pageYOffset
 
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute('id'),
+      sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add('active-link')
+    } else {
+      sectionsClass.classList.remove('active-link')
+    }
+  })
 }
 window.addEventListener('scroll', scrollActive)
 
@@ -108,10 +108,10 @@ if (selectedTheme) {
 }
 
 themeButton.addEventListener('click', () => {
-    document.body.classList.toggle(lightTheme)
-    themeButton.classList.toggle(iconTheme)
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
+  document.body.classList.toggle(lightTheme)
+  themeButton.classList.toggle(iconTheme)
+  localStorage.setItem('selected-theme', getCurrentTheme())
+  localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
 /*=============== SCROLL ANIMATION ===============*/
@@ -122,16 +122,16 @@ const sr = ScrollReveal({
   delay: 400,
 })
 sr.reveal('.home__data')
-sr.reveal('.home__handle', {delay: 700})
-sr.reveal('.home__social, .home__scroll', {delay: 900, origin:'bottom'})
+sr.reveal('.home__handle', { delay: 700 })
+sr.reveal('.home__social, .home__scroll', { delay: 900, origin: 'bottom' })
 
 /*=======================Resume=======================*/
 
-document.getElementById("download_resume").addEventListener("click", function(){
+document.getElementById("download_resume").addEventListener("click", function () {
   window.open("https://drive.google.com/file/d/1QomrPltksgGTBEIkl7JKFg2NL0-qmO_e/view?usp=sharing", "_blank");
 });
 
-document.getElementById("nav_resume").addEventListener("click", function(){
+document.getElementById("nav_resume").addEventListener("click", function () {
   window.open("https://drive.google.com/file/d/1QomrPltksgGTBEIkl7JKFg2NL0-qmO_e/view?usp=sharing", "_blank");
 });
 
@@ -159,7 +159,7 @@ emailInput.addEventListener("keyup", () => {
 });
 function sendmail() {
   let form = document.getElementById("contact__form");
-  form.addEventListener("submit", function(event) {
+  form.addEventListener("submit", function (event) {
     event.preventDefault();
     let name = document.getElementById("form__name");
     let email = document.getElementById("form__email");
@@ -172,12 +172,12 @@ function sendmail() {
     ) {
       error();
     }
-    if (validEmail === true) {
+    else if (validEmail === false) {
+      alert("Please enter a valid email address.");
+    } else if (validEmail === true) {
       sendEmail();
       alert("Message sent successfully!");
       form.reset();
-    } else {
-      alert("Please enter a valid email address.");
     }
   });
 }

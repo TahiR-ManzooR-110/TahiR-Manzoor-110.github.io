@@ -908,6 +908,7 @@ body.light-theme {
   .home__data{
     margin-top: -1rem;
   }
+  
   .home__buttons {
     flex-direction: column;
     margin-bottom: -3rem;
@@ -1051,6 +1052,9 @@ body.light-theme {
 @media screen and (max-width:504px){
   .home__data{
     margin-top: -3rem;
+  }
+  .home__education{
+    height: 35px;
   }
   .education__container {
     grid-template-columns: repeat(2, 200px);

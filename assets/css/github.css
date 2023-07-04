@@ -26,10 +26,6 @@ rect.ContributionCalendar-day[data-level='4'] {
     fill: var(--color-calendar-graph-day-L4-bg);
 }
 
-* {
-    color: white;
-}
-
 .calendar .width-full>.float-left {
     display: none;
 }

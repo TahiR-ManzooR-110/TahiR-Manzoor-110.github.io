@@ -167,7 +167,7 @@ body.light-theme {
 .light-theme .skills__content,
 .light-theme .education__card,
 .light-theme .work__card,
-.light-theme .github__card,
+.light-theme .github__container,
 .light-theme .contact__card {
   box-shadow: 0 2px 16px hsl(var(--second-hue), 48%, 8%, 0.1);
 }

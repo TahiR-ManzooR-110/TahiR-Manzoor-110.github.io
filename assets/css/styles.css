@@ -617,6 +617,13 @@ body.light-theme {
   cursor: pointer;
 }
 
+.express-mysql-icon{
+  width: 50%;
+  height: 50%;
+  margin-top: 6%;
+  /* border: 1px solid red; */
+}
+
 /*Active modal*/
 
 .active-modal {
@@ -626,7 +633,8 @@ body.light-theme {
 
 /*=============== education ===============*/
 .education {
-  margin-bottom: -10rem;
+  margin-bottom: -12rem;
+  text-align: justify;
 }
 
 #education__container {
@@ -1049,6 +1057,13 @@ body.light-theme {
     padding: 2rem 4rem;
   }
 
+  .express-mysql-icon{
+    width: 30%;
+    height: 35%;
+    margin-top: 2%;
+    /* border: 1px solid red; */
+  }
+
   .education__container {
     grid-template-columns: repeat(2, 200px);
     justify-content: center;
@@ -1176,6 +1191,12 @@ body.light-theme {
     justify-content: center;
     column-gap: 3rem;
   }
+  .express-mysql-icon{
+    width: 35%;
+    height: 40%;
+    margin-top: 5%;
+    /* border: 1px solid red; */
+  }
 }
 
 /* For large devices */
@@ -1253,6 +1274,13 @@ body.light-theme {
     column-gap: 3rem;
   }
 
+  .express-mysql-icon{
+    width: 50%;
+    height: 50%;
+    margin-top: 7%;
+    /* border: 1px solid red; */
+  }
+
   .education__container {
     grid-template-columns: repeat(3, 192px);
     column-gap: 3rem;
@@ -1303,6 +1331,13 @@ body.light-theme {
 }
 
 @media screen and (min-width:320px) and (max-width:650px) {
+  .express-mysql-icon{
+    width: 33%;
+    height: 40%;
+    margin-top: 7%;
+    /* border: 1px solid red; */
+  }
+
   #github__chart{
     height: auto;
   }
